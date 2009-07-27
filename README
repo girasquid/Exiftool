@@ -1,0 +1,8 @@
+'exiftool' is a simple library for interfacing with the command-line tool 'exiftool'(http://www.sno.phy.queensu.ca/~phil/exiftool/).
+
+At the moment, all it does is parse EXIF data - you use it like so:
+
+>>> import exiftool
+>>> f = open('photo.jpg')
+>>> exiftool.parse_exif(f)
+{'MIMEType': 'image/jpeg', 'YResolution': '1', 'ResolutionUnit': 'None', 'ImageSize': '640x480', 'ExifImageWidth': '640', 'FileType': 'JPEG', 'ImageWidth': '640', 'CurrentIPTCDigest': '717964420d38c85f3238d694cec521ca', 'ColorComponents': '3', 'BitsPerSample': '8', 'JFIFVersion': '1.01', 'ExifByteOrder': 'Big-endian (Motorola, MM)', 'ExifImageHeight': '480', 'XResolution': '1', 'CodedCharacterSet': 'UTF8', 'Keywords': 'Photo Booth', 'EncodingProcess': 'Baseline DCT, Huffman coding', 'ImageHeight': '480', 'ExifToolVersion': '7.86', 'YCbCrSubSampling': 'YCbCr4:2:0 (2 2)', 'ApplicationRecordVersion': '2'}
